@@ -11,12 +11,18 @@
 
         <meta charset="utf-8">
 
+		{% if title %}
+            <title>Genomic App - {{title}}</title>
+        {% else %}
+            <title>Genomic App</title>
+        {% endif %}
+
     </head>
 
     <body>
         {% block content %}
 
-        
+
 
         {% endblock content%}
 

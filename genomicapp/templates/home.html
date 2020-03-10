@@ -1,9 +1,33 @@
 {% extends 'layout.html' %}
 {% block content %}
 
+	<div>
+		<form method="post", action="">
+			{{ form.hidden_tag() }}
+			<fieldset>
+				<legend>
+					<div>
+						{{ form.antibiotic.label }}
+						{{ form.antibiotic }}
+					</div>
+					<div>
+						{{ form.organism.label }}
+						{{ form.organism }}
+					</div>
+					<div>
+						{{ form.gsps.label }}
+						{{ form.gsps }}
+					</div>
 
-    <div class="container">
-        
-    </div>
+				</legend>
+			</fieldset>
+
+
+			<div>
+				{{ form.submit }}
+			</div>
+
+		</form>
+	</div>
 
 {% endblock content%}

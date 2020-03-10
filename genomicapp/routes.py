@@ -1,6 +1,7 @@
 from flask import render_template
 from genomicapp import app
-
+from genomicapp.forms import QueryForm
 @app.route("/")
 def home():
-    return render_template("home.html")
+	form = QueryForm()
+	return render_template("home.html", title='Home', form=form)
