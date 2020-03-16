@@ -6,6 +6,7 @@ class QueryForm(FlaskForm):
 
 	antibiotic = StringField('Antibiotic', validators=[DataRequired()])
 	organism   = StringField('Organism', validators=[DataRequired()])
+	gspr       = StringField('GSPR', validators=[DataRequired()])
 	gsps       = StringField('GSPS', validators=[DataRequired()])
 
 	submit     = SubmitField('Exceute Query')
